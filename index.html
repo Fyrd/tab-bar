@@ -1,107 +1,79 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Topcoat</title>
-    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/topcoat-tab-bar-mobile-dark.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/brackets.css"><!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Tab-bar : Topcoat tab bar component" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tab-bar</title>
   </head>
-  <body class="dark">
-    <div id="wrapper">
-      <div class="max-width">
-        <div id="sideNav">
-          <nav class="site">
-            <ul>
-              <li><a href="http://topcoat.io">Home</a></li>
-            </ul>
-          </nav>
-          <div class="combo">
-            <select class="docNav">
-              <option value="index.html" selected="selected">Topcoat Tab Bar Mobile Dark</option>
-              <option value="topcoat-tab-bar-mobile-light.html">Topcoat Tab Bar Mobile Light</option>
-            </select>
-          </div>
-          <div id="pageNav">
-            <ul>
-              <li><a href="#tab-bar">Tab Bar</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="site">
-        <header id="main-header">
-          <div class="max-width">
-            <hgroup>
-              <h1><a href="http://topcoat.io">Topcoat</a></h1>
-              <p>CSS for clean and fast web apps</p>
-            </hgroup>
-            <nav>
-              <ul>
-              </ul>
-            </nav><a id="slide-menu-button" class="topcoat-icon-button--large--quiet"><span class="topcoat-icon--large topcoat-icon--menu-stack"></span></a>
-          </div>
-        </header>
-        <div id="content" class="max-width">
-          <article id="tab-bar" class="component">
-            <header>
-              <h2>Tab Bar</h2>
-            </header>
-            <section class="component"><div class="topcoat-tab-bar">  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">One</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">Two</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">Three</button>  </label></div></section>
-            <section class="examples">
-              <h4>Examples</h4>
-              <ul>
-                <li><a href="http://codepen.io/Topcoat/pen/rJICF">mobile tab bar</a></li>
-              </ul>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Fyrd/tab-bar">View on GitHub</a>
+
+          <h1 id="project_title">Tab-bar</h1>
+          <h2 id="project_tagline">Topcoat tab bar component</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Fyrd/tab-bar/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Fyrd/tab-bar/tarball/master">Download this project as a tar.gz file</a>
             </section>
-            <footer>
-              <div class="showcode"><a href="#">Show code snippets</a></div>
-              <section class="code">
-                <div>
-                  <h3>HTML</h3>
-                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-tab-bar&quot;&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
-                </div>
-                <div>
-                  <h3>CSS</h3>
-                  <pre class="css"><code data-language="css">.topcoat-tab-bar__button {
-  padding: 0 1.25rem;
-  height: 3rem;
-  line-height: 3rem;
-  letter-spacing: 1px;
-  color: #c6c8c8;
-  text-shadow: 0 -1px rgba(0,0,0,0.69);
-  vertical-align: top;
-  background-color: #595b5b;
-  box-shadow: inset 0 1px #737373;
-  border-top: 1px solid #333434;
-}
-.topcoat-tab-bar__button:active,
-.topcoat-tab-bar__button--large:active,
-:checked + .topcoat-tab-bar__button {
-  color: #288edf;
-  background-color: #3f4041;
-  box-shadow: inset 0 0 1px rgba(0,0,0,0.05);
-}
-.topcoat-tab-bar__button:focus,
-.topcoat-tab-bar__button--large:focus {
-  z-index: 1;
-  box-shadow: inset 0 1px rgba(255,255,255,0.36), 0 0 0 2px #6fb5f1;
-  outline: 0;
-}
-</code></pre>
-                </div>
-              </section>
-            </footer>
-          </article>
-        </div>
-        <footer></footer>
-      </div>
+        </header>
     </div>
-    <script src="js/rainbow-custom.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tab-bar maintained by <a href="https://github.com/Fyrd">Fyrd</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
